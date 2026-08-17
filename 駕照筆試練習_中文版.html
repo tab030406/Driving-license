@@ -212,7 +212,7 @@ function renderExam(){
  });
  const actions=area.querySelector('.actions');
  actions.innerHTML=`<button class="btn" onclick="prevQ('exam')">上一題</button>
- <button class="btn primary" onclick="${exam.index===exam.list.length-1?'submitExam()':'nextQ(\\'exam\\')'}">${exam.index===exam.list.length-1?'交卷':'下一題'}</button>`;
+ <button class="btn primary" onclick="${exam.index===exam.list.length-1 ? 'submitExam()' : 'nextQ(\"exam\")'}">${exam.index===exam.list.length-1?'交卷':'下一題'}</button>`;
 }
 function submitExam(){exam.submitted=true;renderExamResult()}
 function renderExamResult(){
